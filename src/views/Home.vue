@@ -48,8 +48,8 @@
     <!--底部-->
     <div class="foot">
       <ul>
-        <li><img src="../views/images/icon_1.png" alt="" /></li>
-        <li>首页</li>
+        <li><img src="../views/images/icon_1_1.png" alt="" /></li>
+        <li style="color: orange">首页</li>
       </ul>
       <ul>
         <li><img src="../views/images/icon_2.png" alt="" /></li>
@@ -100,8 +100,8 @@ export default {
 
 <style scoped>
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   /* position: relative; */
 }
 .head {
@@ -112,7 +112,7 @@ export default {
   display: flex;
   left: 0px;
   bottom: 0px;
-  width: 399px;
+  width: 390px;
   z-index: 9999;
   height: 60px;
   background-color: white;
