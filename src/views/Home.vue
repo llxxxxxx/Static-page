@@ -48,20 +48,20 @@
     <!--底部-->
     <div class="foot">
       <ul>
-        <li><img src="../views/images/icon_1.png" alt="" /></li>
-        <li><p>首页</p></li>
+        <li><img src="../views/images/icon_1_1.png" alt="" /></li>
+        <li style="color: orange">首页</li>
       </ul>
       <ul>
         <li><img src="../views/images/icon_2.png" alt="" /></li>
-        <li><p>社区服务</p></li>
+        <li>社区服务</li>
       </ul>
       <ul>
         <li><img src="../views/images/icon_3.png" alt="" /></li>
-        <li><p>社区交流</p></li>
+        <li>社区交流</li>
       </ul>
       <ul>
         <li><img src="../views/images/icon_4.png" alt="" /></li>
-        <li><p>个人中心</p></li>
+        <li>个人中心</li>
       </ul>
     </div>
   </div>
@@ -100,8 +100,8 @@ export default {
 
 <style scoped>
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   /* position: relative; */
 }
 .head {
@@ -112,7 +112,7 @@ export default {
   display: flex;
   left: 0px;
   bottom: 0px;
-  width: 399px;
+  width: 390px;
   z-index: 9999;
   height: 60px;
   background-color: white;

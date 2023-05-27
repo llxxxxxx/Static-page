@@ -2,6 +2,14 @@
   <div class="bg">
     <!--头部-->
     <div class="head">
+      <p style="color: white; margin-bottom: 40px">
+        个人中心
+        <img
+          style="width: 20px; height: 20px; float: right; margin-right: 20px"
+          src="./images/mine/8.png"
+          alt=""
+        />
+      </p>
       <img src="../views/images/mine/avatar.png" alt="" />
       <p>请点击登录</p>
     </div>
@@ -48,25 +56,24 @@
     </div>
   </div>
   <!--底部---->
-
-  <footer class="footer">
+  <div class="foot">
     <ul>
       <li><img src="../views/images/icon_1.png" alt="" /></li>
-      <li><p>首页</p></li>
+      <li>首页</li>
     </ul>
     <ul>
       <li><img src="../views/images/icon_2.png" alt="" /></li>
-      <li><p>社区服务</p></li>
+      <li>社区服务</li>
     </ul>
     <ul>
       <li><img src="../views/images/icon_3.png" alt="" /></li>
-      <li><p>社区交流</p></li>
+      <li>社区交流</li>
     </ul>
     <ul>
-      <li><img src="../views/images/icon_4.png" alt="" /></li>
-      <li><p>个人中心</p></li>
+      <li><img src="../views/images/icon_4_1.png" alt="" /></li>
+      <li style="color: orange">个人中心</li>
     </ul>
-  </footer>
+  </div>
 </template>
 
 <script>
@@ -74,20 +81,22 @@ import "../views/css/index.css";
 </script>
 
 <style scoped>
+* {
+  margin: 0;
+  padding: 0;
+}
 html,
 body {
   height: 100%;
   margin: 0;
 }
 .bg {
-  background: #f5f5f5;
+  background: #f1f1f1;
 }
 .head {
   width: 390px;
-  height: 250px;
-  /* background: #ccc; */
-  display: flex;
-  align-items: center;
+  height: 230px;
+  padding-top: 20px;
   text-align: center;
 }
 .head img {
@@ -110,24 +119,21 @@ body {
   /* margin: 0 auto; */
 }
 
-footer {
+.foot {
   position: fixed;
   display: flex;
   left: 0px;
   bottom: 0px;
-  width: 100%;
+  width: 390px;
   z-index: 9999;
   height: 60px;
   background-color: white;
 }
-footer ul {
+.foot ul {
   float: left;
   list-style: none;
   flex: 1;
   text-align: center;
-}
-.footer,
-.push {
-  height: 50px;
+  margin: 0 auto;
 }
 </style>
