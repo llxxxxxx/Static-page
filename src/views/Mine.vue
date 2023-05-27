@@ -2,7 +2,7 @@
   <div class="bg">
     <!--头部-->
     <div class="head">
-      <p style="color: white; margin-bottom: 40px">
+      <p style="color: gray; margin-bottom: 40px">
         个人中心
         <img
           style="width: 20px; height: 20px; float: right; margin-right: 20px"
