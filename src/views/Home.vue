@@ -49,19 +49,19 @@
     <div class="foot">
       <ul>
         <li><img src="../views/images/icon_1.png" alt="" /></li>
-        <li><p>首页</p></li>
+        <li>首页</li>
       </ul>
       <ul>
         <li><img src="../views/images/icon_2.png" alt="" /></li>
-        <li><p>社区服务</p></li>
+        <li>社区服务</li>
       </ul>
       <ul>
         <li><img src="../views/images/icon_3.png" alt="" /></li>
-        <li><p>社区交流</p></li>
+        <li>社区交流</li>
       </ul>
       <ul>
         <li><img src="../views/images/icon_4.png" alt="" /></li>
-        <li><p>个人中心</p></li>
+        <li>个人中心</li>
       </ul>
     </div>
   </div>
