@@ -4,11 +4,7 @@
     <div class="head">
       <p style="color: gray; margin-bottom: 40px">
         个人中心
-        <img
-          style="width: 20px; height: 20px; float: right; margin-right: 20px"
-          src="./images/mine/8.png"
-          alt=""
-        />
+        <img style="width: 20px; height: 20px; float: right; margin-right: 20px" src="./images/mine/8.png" alt="" />
       </p>
       <img src="../views/images/mine/avatar.png" alt="" />
       <p>请点击登录</p>
@@ -85,20 +81,24 @@ import "../views/css/index.css";
   margin: 0;
   padding: 0;
 }
+
 html,
 body {
   height: 100%;
   margin: 0;
 }
+
 .bg {
   background: #f1f1f1;
 }
+
 .head {
   width: 390px;
   height: 230px;
   padding-top: 20px;
   text-align: center;
 }
+
 .head img {
   width: 100px;
   height: 100px;
@@ -112,11 +112,12 @@ body {
   /* margin-bottom: 60px; */
   margin-top: 20px;
 }
+
 .mid div {
   height: 71px;
   line-height: 71px;
   margin-left: 15px;
-  /* margin: 0 auto; */
+  vertical-align:middle;
 }
 
 .foot {
@@ -129,6 +130,7 @@ body {
   height: 60px;
   background-color: white;
 }
+
 .foot ul {
   float: left;
   list-style: none;
