@@ -20,8 +20,35 @@ const router = createRouter({
     {
       path:'/information',
       component: () => import('../views/Information.vue')
-    }
-    
+    },
+    {
+      path:'/changearea',
+      component: () => import('../views/Changearea.vue')
+    },
+    {
+      path:'/person',
+      component: () => import('../views/Person.vue')
+    },
+    {
+      path:'/collection',
+      component: () => import('../views/Collection.vue')
+    },
+    {
+      path:'/wallet',
+      component: () => import('../views/Wallet.vue')
+    },
+    {
+      path:'/integral',
+      component: () => import('../views/Integral.vue')
+    },
+    {
+      path:'/coupon',
+      component: () => import('../views/Coupon.vue')
+    },
+    {
+      path:'/order',
+      component: () => import('../views/Order.vue')
+    },
   ]
 })
 
