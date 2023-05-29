@@ -1,62 +1,101 @@
 <template>
-  <div class="bg">
-    <!--头部-->
-    <div class="head">
-      <img src="../views/images/person_add/1_1.png" alt="" />
-      <span style="font-size: 22px; margin-left: 140px">添加</span>
+  <div>
+    <div class="main">
+      <div class="head">
+        <img src="./images/changeArea/icon_1.png" alt="" />
+        <span>添加</span>
+      </div>
+      <div class="mid">
+        <div class="name">
+          <span>姓名</span>
+          <input type="text" placeholder="请输入姓名" />
+        </div>
+        <div class="name">
+          <span>手机号</span>
+          <input type="text" placeholder="请输入手机号" />
+        </div>
+      </div>
+      <div class="bottom">
+        <button>添加</button>
+      </div>
     </div>
-    <!--主要部分-->
-    <!-- <div class="main">
-      <div>
-        <span style="font-size: 19px; margin-left: 20px">姓名</span>
-        <input
-          style="
-            margin-top: 20px;
-            margin-left: 40px;
-            height: 45px;
-            width: 280px;
-          "
-          type="text"
-          value="请输入姓名"
-        />
-      </div>
-      <div>
-        <span style="font-size: 19px; margin-left: 20px">手机号</span>
-        <input
-          style="margin-left: 22px; height: 45px; width: 280px"
-          type="text"
-          value="请输入手机号"
-        />
-      </div>
-      
-      <input
-        style="border: 0; border-bottom: 1px solid #333333; width: 390px"
-      />
-      
-    </div> -->
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {};
+  },
+};
+</script>
 
 <style scoped>
-.bg {
-  background: #efefef;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 390px;
   height: 844px;
+  background-color: #e9e9e9;
 }
+
 .head {
-  height: 80px;
-  background: #fff;
+  width: 375px;
+  height: 50px;
+  padding-top: 25px;
+  padding-left: 15px;
+  background-color: white;
+  margin-bottom: 10px;
 }
+
 .head img {
   width: 10px;
-  margin-top: 35px;
-  margin-left: 20px;
+}
+
+.head span {
+  font-size: 25px;
+  display: inline-block;
+  width: 335px;
+  height: 40px;
   text-align: center;
 }
-.main {
-  background: #fff;
-  margin-top: 15px;
-  height: 140px;
+.mid {
+  width: 100%;
+  height: 180px;
+}
+.name {
+  height: 60px;
+  line-height: 60px;
+  font-size: 18px;
+  padding-left: 15px;
+  background-color: white;
+}
+.name span {
+  display: inline-block;
+  width: 70px;
+}
+.name input {
+  width: 280px;
+  height: 40px;
+  font-size: 18px;
+  margin-left: 5px;
+  border: none;
+  outline: none;
+}
+.bottom {
+  width: 390px;
+  text-align: center;
+}
+.bottom button {
+  width: 360px;
+  height: 50px;
+  font-size: 18px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: white;
 }
 </style>
