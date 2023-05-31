@@ -62,6 +62,10 @@ const router = createRouter({
       path:'/personInformation',
       component: () => import('../views/Person_information.vue')
     },
+    {
+      path: '/smartdoor',
+      component: () => import('../views/Smart_Opendoor.vue')
+    }
   ]
 })
 
