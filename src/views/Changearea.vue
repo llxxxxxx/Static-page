@@ -1,24 +1,25 @@
+<!-- 切换小区页面 -->
 <template>
   <div>
     <div class="main">
       <div class="head">
-        <img src="./images/changeArea/icon_1.png" alt="">
+        <img src="./images/changeArea/icon_1.png" alt="" />
         <span>切换小区</span>
       </div>
       <div class="yes">
         白水芊城上水坊
-        <img src="./images/changeArea/icon_2.png" alt="">
+        <img src="./images/changeArea/icon_2.png" alt="" />
       </div>
       <div class="select">
         <div class="select1">
           白水芊城上水坊
-          <span style="color: #666;">点击切换</span>
-          <img src="./images/changeArea/icon_3.png" alt="">
+          <span style="color: #666">点击切换</span>
+          <img src="./images/changeArea/icon_3.png" alt="" />
         </div>
         <div class="select2">
           上新河小区
-          <span style="color: #666;">点击切换</span>
-          <img src="./images/changeArea/icon_3.png" alt="">
+          <span style="color: #666">点击切换</span>
+          <img src="./images/changeArea/icon_3.png" alt="" />
         </div>
       </div>
     </div>
@@ -28,14 +29,12 @@
 <script>
 export default {
   data() {
-    return {
-    }
+    return {};
   },
-
-}
+};
 </script>
 
-<style scoped >
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -82,32 +81,32 @@ export default {
   padding-top: 25px;
   padding-right: 10px;
 }
-.select{
+.select {
   margin-top: 10px;
   width: 375px;
   padding-left: 15px;
   background-color: white;
   font-size: 20px;
 }
-.select img{
+.select img {
   width: 10px;
   float: right;
   padding-top: 25px;
   padding-right: 10px;
 }
-.select1 span{
+.select1 span {
   margin-left: 120px;
 }
-.select1{
+.select1 {
   height: 70px;
   line-height: 70px;
   border-bottom: 1px solid #ccc;
 }
-.select2{
+.select2 {
   height: 70px;
   line-height: 70px;
 }
-.select2 span{
+.select2 span {
   margin-left: 160px;
 }
 </style>

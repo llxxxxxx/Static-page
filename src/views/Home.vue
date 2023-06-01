@@ -1,3 +1,4 @@
+<!-- 首页 -->
 <template>
   <div>
     <img class="head" src="../views/images/header.png" alt="" />

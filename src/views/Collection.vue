@@ -1,23 +1,24 @@
+<!-- 我的收藏页面 -->
 <template>
   <div>
     <div class="main">
       <div class="head">
-        <img src="./images/changeArea/icon_1.png" alt="">
+        <img src="./images/changeArea/icon_1.png" alt="" />
         <span>我的收藏</span>
       </div>
       <div class="select">
         <ul>
-          <li style="color: orange;border-bottom: 2px solid orange;">资讯</li>
+          <li style="color: orange; border-bottom: 2px solid orange">资讯</li>
           <li>社区交流</li>
         </ul>
       </div>
       <div class="mid">
         <div class="zixun">
-          <img src="./images/1_3.png" alt="">
+          <img src="./images/1_3.png" alt="" />
           <span> 百岁奶奶创世界纪录 成全球最年长跳伞玩家</span>
         </div>
         <div class="zixun">
-          <img src="./images/1_4.png" alt="">
+          <img src="./images/1_4.png" alt="" />
           <span>南京大屠杀死难者公祭仪式今日举行</span>
         </div>
       </div>
@@ -28,14 +29,12 @@
 <script>
 export default {
   data() {
-    return {
-    }
+    return {};
   },
-
-}
+};
 </script>
 
-<style scoped >
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -67,28 +66,27 @@ export default {
   height: 40px;
   text-align: center;
 }
-.select{
+.select {
   background-color: white;
 }
-.select ul{
+.select ul {
   height: 50px;
-
 }
-.select li{
+.select li {
   width: 100px;
   margin-left: 47px;
- 
- margin-right: 47px;
+
+  margin-right: 47px;
   font-size: 22px;
   float: left;
   list-style: none;
   text-align: center;
   line-height: 50px;
 }
-.mid{
+.mid {
   margin-top: 15px;
 }
-.zixun{
+.zixun {
   width: 370px;
   height: 80px;
   background-color: white;
@@ -97,11 +95,11 @@ export default {
   overflow: hidden;
   margin-bottom: 10px;
 }
-.zixun img{
+.zixun img {
   width: 95px;
   float: left;
 }
-.zixun span{
+.zixun span {
   display: inline-block;
   width: 245px;
   margin-left: 15px;

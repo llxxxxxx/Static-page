@@ -1,21 +1,32 @@
+<!-- 优惠券页面 -->
 <template>
   <div>
     <div class="main">
       <div class="head">
-        <img src="./images/changeArea/icon_1.png" alt="">
+        <img src="./images/changeArea/icon_1.png" alt="" />
         <span>优惠券</span>
       </div>
       <div class="mid">
         <div class="thing">
           <p class="top">
-            <span style="color: white;">￥</span>
-            <span style="color: white;font-size: 40px;">50</span>
-            <span style="color: orange;font-size: 30px;margin-left: 60px;">商品券</span>
-            <span style="color: orange;float: right;margin-top: 5px;margin-right: 15px;">3天到期</span>
+            <span style="color: white">￥</span>
+            <span style="color: white; font-size: 40px">50</span>
+            <span style="color: orange; font-size: 30px; margin-left: 60px"
+              >商品券</span
+            >
+            <span
+              style="
+                color: orange;
+                float: right;
+                margin-top: 5px;
+                margin-right: 15px;
+              "
+              >3天到期</span
+            >
           </p>
           <p class="bottom">
-            <span style="color: white;">无金额门槛</span>
-            <span style="margin-left: 40px;">2018-10-30至2018-12-25</span>
+            <span style="color: white">无金额门槛</span>
+            <span style="margin-left: 40px">2018-10-30至2018-12-25</span>
           </p>
         </div>
         <div class="pass"></div>
@@ -29,14 +40,13 @@
 export default {
   data() {
     return {
-      message: 'Hello'
-    }
+      message: "Hello",
+    };
   },
-
-}
+};
 </script>
 
-<style scoped >
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -68,11 +78,11 @@ export default {
   height: 40px;
   text-align: center;
 }
-.mid{
+.mid {
   width: 390px;
   margin-top: 10px;
 }
-.thing{
+.thing {
   width: 340px;
   height: 90px;
   margin: 0 auto;
@@ -82,14 +92,14 @@ export default {
   background-size: 100%;
   background-image: url("./images/coupon/bg_1.png");
 }
-.pass{
+.pass {
   width: 360px;
   height: 100px;
   margin: 0 auto;
   background-size: 100%;
   background-image: url("./images/coupon/bg_2.png");
 }
-.no{
+.no {
   width: 120px;
   margin: 0 auto;
   color: #999;

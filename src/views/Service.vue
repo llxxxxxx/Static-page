@@ -1,17 +1,17 @@
+<!-- 社区服务页面 -->
 <template>
   <div>
-
     <div class="head">
-      <img src="./images/service/search.png" alt="">
-      <input type="text" name="" id="" placeholder="关键字">
+      <img src="./images/service/search.png" alt="" />
+      <input type="text" name="" id="" placeholder="关键字" />
     </div>
     <div class="mid">
       <div class="image">
-        <img src="./images/service/1_1.png" alt="">
+        <img src="./images/service/1_1.png" alt="" />
       </div>
       <div class="kind">
         <ul v-for="item in kind">
-          <li><img :src="item.image" alt=""></li>
+          <li><img :src="item.image" alt="" /></li>
           <li>{{ item.title }}</li>
         </ul>
       </div>
@@ -19,15 +19,16 @@
         <h5>热门推荐</h5>
         <div>
           <div v-for="item in content" class="inter">
-            <img :src="item.image" alt="">
+            <img :src="item.image" alt="" />
             <ul>
-              <li style="font-weight: 800;">{{ item.title }}</li>
-              <li style="color: #777;font-size: 12px;">{{ item.info }}</li>
-              <li style="color: red;float: right;margin-right: 10px;">{{ item.price }}</li>
+              <li style="font-weight: 800">{{ item.title }}</li>
+              <li style="color: #777; font-size: 12px">{{ item.info }}</li>
+              <li style="color: red; float: right; margin-right: 10px">
+                {{ item.price }}
+              </li>
             </ul>
           </div>
         </div>
-
       </div>
     </div>
     <div class="foot">
@@ -37,7 +38,7 @@
       </ul>
       <ul>
         <li><img src="../views/images/service/icon_2_1.png" alt="" /></li>
-        <li style="color: orange;">社区服务</li>
+        <li style="color: orange">社区服务</li>
       </ul>
       <ul>
         <li><img src="../views/images/icon_3.png" alt="" /></li>
@@ -57,39 +58,38 @@ export default {
     return {
       kind: [
         {
-          image: 'src/views/images/service/2_1.png',
-          title: '房产交易'
+          image: "src/views/images/service/2_1.png",
+          title: "房产交易",
         },
         {
-          image: 'src/views/images/service/2_2.png',
-          title: '跳蚤市场'
+          image: "src/views/images/service/2_2.png",
+          title: "跳蚤市场",
         },
         {
-          image: 'src/views/images/service/2_3.png',
-          title: '小区商家'
-        }
+          image: "src/views/images/service/2_3.png",
+          title: "小区商家",
+        },
       ],
       content: [
         {
-          image: 'src/views/images/service/1_2.png',
-          title: '日默瓦旅行箱26寸',
-          info: '26寸德国RIMOWA日默瓦登机箱拉杆箱新款ESSENTIAL旅行箱 原SALSA升级款',
-          price: '￥ 4999.00'
+          image: "src/views/images/service/1_2.png",
+          title: "日默瓦旅行箱26寸",
+          info: "26寸德国RIMOWA日默瓦登机箱拉杆箱新款ESSENTIAL旅行箱 原SALSA升级款",
+          price: "￥ 4999.00",
         },
         {
-          image: 'src/views/images/service/1_2.png',
-          title: '日默瓦旅行箱26寸',
-          info: '26寸德国RIMOWA日默瓦登机箱拉杆箱新款ESSENTIAL旅行箱 原SALSA升级款',
-          price: '￥ 4999.00'
-        }
-      ]
-    }
+          image: "src/views/images/service/1_2.png",
+          title: "日默瓦旅行箱26寸",
+          info: "26寸德国RIMOWA日默瓦登机箱拉杆箱新款ESSENTIAL旅行箱 原SALSA升级款",
+          price: "￥ 4999.00",
+        },
+      ],
+    };
   },
-
-}
+};
 </script>
 
-<style scoped >
+<style scoped>
 * {
   margin: 0;
   padding: 0;
@@ -144,10 +144,10 @@ ul {
   flex: 1;
   text-align: center;
 }
-.content{
+.content {
   width: 390px;
 }
-h5{
+h5 {
   margin-left: 10px;
   margin-bottom: 10px;
 }
@@ -169,8 +169,8 @@ h5{
 .inter ul {
   float: left;
   width: 270px;
- margin-left: 10px;
- margin-top: 8px;
+  margin-left: 10px;
+  margin-top: 8px;
 }
 .foot {
   position: fixed;

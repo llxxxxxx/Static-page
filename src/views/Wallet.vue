@@ -1,31 +1,31 @@
+<!-- 钱包页面 -->
 <template>
   <div>
     <div class="main">
       <div class="head">
-        <img src="./images/wallet/icon_1.png" alt="">
+        <img src="./images/wallet/icon_1.png" alt="" />
         <span>我的钱包</span>
         <p class="money">12868.88</p>
         <p class="yu">账户余额（元）</p>
       </div>
       <div class="mid">
-         <div class="midd">
+        <div class="midd">
           <p class="title">充值</p>
           <p class="date">2018-12-21</p>
           <p class="inter">+100.00</p>
-         </div>
-         <div class="midd">
+        </div>
+        <div class="midd">
           <p class="title">购物</p>
           <p class="date">2018-10-03</p>
           <p class="outer">-50.80</p>
-         </div>
-         <div class="midd">
+        </div>
+        <div class="midd">
           <p class="title">充值</p>
           <p class="date">2018-10-03</p>
           <p class="inter">+100.00</p>
-         </div>
+        </div>
       </div>
     </div>
-    
   </div>
 </template>
 
@@ -33,27 +33,26 @@
 export default {
   data() {
     return {
-      message: 'Hello'
-    }
+      message: "Hello",
+    };
   },
-
-}
+};
 </script>
 
-<style scoped >
-*{
+<style scoped>
+* {
   margin: 0;
   padding: 0;
 }
-.main{
+.main {
   width: 390px;
   height: 844px;
   background-color: #e9e9e9;
 }
-.head{
+.head {
   width: 390px;
   height: 215px;
-  background-image:url("./images/wallet/1.png");
+  background-image: url("./images/wallet/1.png");
   background-size: 100%;
   padding-top: 25px;
 }
@@ -70,24 +69,24 @@ export default {
   text-align: center;
   color: white;
 }
-.money{
+.money {
   margin-top: 15px;
   text-align: center;
   font-size: 45px;
   color: white;
 }
-.yu{
+.yu {
   margin-top: 15px;
   text-align: center;
   font-size: 18px;
   color: white;
 }
-.mid{
+.mid {
   width: 390px;
   position: relative;
   top: -25px;
 }
-.midd{
+.midd {
   width: 320px;
   height: 60px;
   background-color: white;
@@ -97,23 +96,22 @@ export default {
   position: relative;
   margin-bottom: 10px;
 }
-.title{
+.title {
   font-size: 20px;
-
 }
-.date{
+.date {
   color: #999;
   margin-top: 5px;
   font-size: 17px;
 }
-.inter{
+.inter {
   font-size: 30px;
   color: rgb(255, 128, 0);
   position: absolute;
   top: 20px;
   left: 220px;
 }
-.outer{
+.outer {
   font-size: 30px;
   color: #333;
   position: absolute;

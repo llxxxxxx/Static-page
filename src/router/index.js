@@ -65,6 +65,10 @@ const router = createRouter({
     {
       path: '/smartdoor',
       component: () => import('../views/Smart_Opendoor.vue')
+    },
+    {
+      path: '/unbind',
+      component: () => import('../views/Unbind.vue')
     }
   ]
 })

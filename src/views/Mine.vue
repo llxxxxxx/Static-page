@@ -1,10 +1,15 @@
+<!-- 个人中心页面 -->
 <template>
   <div class="bg">
     <!--头部-->
     <div class="head">
       <p style="color: gray; margin-bottom: 40px">
         个人中心
-        <img style="width: 20px; height: 20px; float: right; margin-right: 20px" src="./images/mine/8.png" alt="" />
+        <img
+          style="width: 20px; height: 20px; float: right; margin-right: 20px"
+          src="./images/mine/8.png"
+          alt=""
+        />
       </p>
       <img src="../views/images/mine/avatar.png" alt="" />
       <p>请点击登录</p>
@@ -117,7 +122,7 @@ body {
   height: 71px;
   line-height: 71px;
   margin-left: 15px;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 .foot {
