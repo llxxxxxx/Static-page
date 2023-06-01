@@ -1,25 +1,34 @@
-<!-- 微信解除绑定页面 -->
+<!-- 手机号 -->
 <template>
   <div>
     <!-- 头部 -->
     <div class="head">
       <img src="./images/personal-information/icon_1.png" alt="" />
-      <span>解除绑定</span>
+      <span>手机号</span>
     </div>
-    <!-- 全局背景部分 -->
+    <!-- 背景 -->
     <div class="bg">
       <!-- 头像部分 -->
       <div class="parent">
         <div class="main">
           <img src="./images/personal-information/1_2.png" alt="" />
-          <p style="font-size: larger; color: grey">已绑定微信</p>
+          <p style="font-size: larger; font-weight: 600; margin-bottom: 5px">
+            您当前的手机号为
+          </p>
+          <p
+            style="color: orange; font-size: 23px; margin: 0; font-weight: 600"
+          >
+            151****8512
+          </p>
         </div>
       </div>
-      <p class="item">
-        您可以点击下方按钮解除与当前微信的绑定，或者绑定新的微信号
-      </p>
+      <ul class="item">
+        <li>1.更换手机后，当前账户基础信息保持不变，部分权益将会失效</li>
+        <li>2.更换成功之后请使用新手机号进行登录</li>
+        <li>3.30天内只能修改一次手机号</li>
+      </ul>
       <!-- 解除绑定按钮 -->
-      <div class="button">解除绑定</div>
+      <div class="button">好了我知道了，我要更换</div>
     </div>
   </div>
 </template>
@@ -48,12 +57,12 @@
   text-align: center;
 }
 .bg {
+  background: #f8f8f8;
   height: 759px;
   width: 390px;
-  background: #292835;
 }
 .parent {
-  height: 200px;
+  height: 230px;
   display: flex;
   justify-content: center; /*使用flex布局水平居中*/
   /* align-items: center;      使用flex布局垂直居中 */
@@ -70,16 +79,21 @@
   margin: 30px;
   color: rgb(170, 170, 170);
   font-size: 18px;
+  list-style: none;
+  padding: 0;
+}
+.item li {
+  margin-top: 8px;
 }
 .button {
   background: rgb(238, 123, 28);
-  height: 65px;
-  margin-top: 380px;
-  border-radius: 10px;
+  height: 62px;
+  margin-top: 300px;
+  border-radius: 7px;
   line-height: 65px;
   text-align: center;
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   margin-left: 20px;
   margin-right: 20px;
 }

@@ -69,6 +69,10 @@ const router = createRouter({
     {
       path: '/unbind',
       component: () => import('../views/Unbind.vue')
+    },
+    {
+      path: '/phonenumber',
+      component: () => import('../views/Phone-number.vue')
     }
   ]
 })
