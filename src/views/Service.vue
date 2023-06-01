@@ -32,7 +32,7 @@
       </div>
     </div>
     <div class="foot">
-      <ul>
+      <ul @click="gohome">
         <li><img src="../views/images/icon_1.png" alt="" /></li>
         <li>首页</li>
       </ul>
@@ -44,7 +44,7 @@
         <li><img src="../views/images/icon_3.png" alt="" /></li>
         <li>社区交流</li>
       </ul>
-      <ul>
+      <ul @click="gomine">
         <li><img src="../views/images/icon_4.png" alt="" /></li>
         <li>个人中心</li>
       </ul>
@@ -85,6 +85,14 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    gohome() {
+      this.$router.replace("/home");
+    },
+    gomine() {
+      this.$router.replace("/mine");
+    },
   },
 };
 </script>

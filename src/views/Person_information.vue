@@ -3,7 +3,11 @@
   <div>
     <div class="main">
       <div class="head">
-        <img src="./images/personal-information/icon_1.png" alt="" />
+        <img
+          @click="goback"
+          src="./images/personal-information/icon_1.png"
+          alt=""
+        />
         <span>个人资料</span>
       </div>
       <div class="mid">
@@ -53,7 +57,7 @@
           </div>
         </div>
         <div class="mid-bottom">
-          <div>
+          <div @click="gophonenumber">
             手机号
             <span>158****4521</span>
             <img
@@ -62,7 +66,7 @@
               alt=""
             />
           </div>
-          <div>
+          <div @click="gounbind">
             微信
             <span>已绑定</span>
             <img
@@ -93,6 +97,17 @@
 export default {
   data() {
     return {};
+  },
+  methods: {
+    goback() {
+      this.$router.replace("/setting");
+    },
+    gophonenumber() {
+      this.$router.replace("/phonenumber");
+    },
+    gounbind() {
+      this.$router.replace("/unbind");
+    },
   },
 };
 </script>

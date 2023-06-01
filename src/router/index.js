@@ -72,7 +72,11 @@ const router = createRouter({
     },
     {
       path: '/phonenumber',
-      component: () => import('../views/Phone-number.vue')
+      component: () => import('../views/Phone_number.vue')
+    },
+    {
+      path: '/modifyphonenumber',
+      component: () => import('../views/Modify_Phonenumber.vue')
     }
   ]
 })

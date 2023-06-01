@@ -3,7 +3,7 @@
   <div>
     <div class="main">
       <div class="head">
-        <img src="./images/setting/icon_1.png" alt="" />
+        <img @click="goback" src="./images/setting/icon_1.png" alt="" />
         <span>设置</span>
       </div>
       <div class="mid">
@@ -12,7 +12,9 @@
           <img src="./images/setting/icon_0.png" alt="" />
         </div>
         <div class="mid-bottom">
-          <div>个人资料<img src="./images/setting/icon_0.png" alt="" /></div>
+          <div @click="gopersoninformation">
+            个人资料<img src="./images/setting/icon_0.png" alt="" />
+          </div>
           <div>意见反馈<img src="./images/setting/icon_0.png" alt="" /></div>
           <div>关于我们<img src="./images/setting/icon_0.png" alt="" /></div>
         </div>
@@ -28,6 +30,14 @@
 export default {
   data() {
     return {};
+  },
+  methods: {
+    goback() {
+      this.$router.replace("/mine");
+    },
+    gopersoninformation() {
+      this.$router.replace("/personInformation");
+    },
   },
 };
 </script>

@@ -3,7 +3,11 @@
   <div>
     <!-- 头部 -->
     <div class="head">
-      <img src="./images/personal-information/icon_1.png" alt="" />
+      <img
+        @click="goback"
+        src="./images/personal-information/icon_1.png"
+        alt=""
+      />
       <span>解除绑定</span>
     </div>
     <!-- 全局背景部分 -->
@@ -24,7 +28,15 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  methods: {
+    goback() {
+      this.$router.replace("/personInformation");
+    },
+  },
+};
+</script>
 
 <style scoped>
 .head {

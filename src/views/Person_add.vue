@@ -3,7 +3,7 @@
   <div>
     <div class="main">
       <div class="head">
-        <img src="./images/changeArea/icon_1.png" alt="" />
+        <img @click="goback" src="./images/changeArea/icon_1.png" alt="" />
         <span>添加</span>
       </div>
       <div class="mid">
@@ -27,6 +27,11 @@
 export default {
   data() {
     return {};
+  },
+  methods: {
+    goback() {
+      this.$router.replace("/person");
+    },
   },
 };
 </script>

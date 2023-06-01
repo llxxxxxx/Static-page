@@ -3,7 +3,7 @@
   <div>
     <div class="main">
       <div class="head">
-        <img src="./images/changeArea/icon_1.png" alt="" />
+        <img @click="goback" src="./images/changeArea/icon_1.png" alt="" />
         <span>我的收藏</span>
       </div>
       <div class="select">
@@ -13,7 +13,7 @@
         </ul>
       </div>
       <div class="mid">
-        <div class="zixun">
+        <div @click="goinformation" class="zixun">
           <img src="./images/1_3.png" alt="" />
           <span> 百岁奶奶创世界纪录 成全球最年长跳伞玩家</span>
         </div>
@@ -30,6 +30,14 @@
 export default {
   data() {
     return {};
+  },
+  methods: {
+    goback() {
+      this.$router.replace("/mine");
+    },
+    goinformation() {
+      this.$router.replace("/information");
+    },
   },
 };
 </script>

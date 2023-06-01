@@ -3,7 +3,7 @@
   <div>
     <div class="main">
       <div class="head">
-        <img src="./images/integral/icon_1.png" alt="" />
+        <img @click="goback" src="./images/integral/icon_1.png" alt="" />
         <span>积分</span>
         <p class="money">6400</p>
         <p class="yu">我的积分</p>
@@ -35,6 +35,11 @@ export default {
     return {
       message: "Hello",
     };
+  },
+  methods: {
+    goback() {
+      this.$router.replace("/mine");
+    },
   },
 };
 </script>

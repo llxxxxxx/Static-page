@@ -31,7 +31,7 @@
           <span style="float: right; color: #777777">查看全部</span>
         </div>
         <div class="huawei">
-          <div>
+          <div @click="goinformation">
             <img src="../views/images/1_2.png" alt="" />
             <span>在获准保释的第二天 华为CEO孟晚舟出门了</span>
           </div>
@@ -52,7 +52,7 @@
         <li><img src="../views/images/icon_1_1.png" alt="" /></li>
         <li style="color: orange">首页</li>
       </ul>
-      <ul>
+      <ul @click="goservice">
         <li><img src="../views/images/icon_2.png" alt="" /></li>
         <li>社区服务</li>
       </ul>
@@ -60,7 +60,7 @@
         <li><img src="../views/images/icon_3.png" alt="" /></li>
         <li>社区交流</li>
       </ul>
-      <ul>
+      <ul @click="gomine">
         <li><img src="../views/images/icon_4.png" alt="" /></li>
         <li>个人中心</li>
       </ul>
@@ -95,6 +95,17 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    goservice() {
+      this.$router.replace("/service");
+    },
+    gomine() {
+      this.$router.replace("/mine");
+    },
+    goinformation() {
+      this.$router.replace("/information");
+    },
   },
 };
 </script>

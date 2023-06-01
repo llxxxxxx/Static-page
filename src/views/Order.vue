@@ -3,7 +3,7 @@
   <div>
     <div class="main">
       <div class="head">
-        <img src="./images/changeArea/icon_1.png" alt="" />
+        <img @click="goback" src="./images/changeArea/icon_1.png" alt="" />
         <span>我的订单</span>
       </div>
       <div class="select">
@@ -131,6 +131,11 @@ export default {
     return {
       message: "Hello",
     };
+  },
+  methods: {
+    goback() {
+      this.$router.replace("/mine");
+    },
   },
 };
 </script>

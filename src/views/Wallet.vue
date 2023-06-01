@@ -3,7 +3,7 @@
   <div>
     <div class="main">
       <div class="head">
-        <img src="./images/wallet/icon_1.png" alt="" />
+        <img @click="goback" src="./images/wallet/icon_1.png" alt="" />
         <span>我的钱包</span>
         <p class="money">12868.88</p>
         <p class="yu">账户余额（元）</p>
@@ -35,6 +35,11 @@ export default {
     return {
       message: "Hello",
     };
+  },
+  methods: {
+    goback() {
+      this.$router.replace("/mine");
+    },
   },
 };
 </script>

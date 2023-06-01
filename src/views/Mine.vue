@@ -9,6 +9,7 @@
           style="width: 20px; height: 20px; float: right; margin-right: 20px"
           src="./images/mine/8.png"
           alt=""
+          @click="gosetting"
         />
       </p>
       <img src="../views/images/mine/avatar.png" alt="" />
@@ -17,37 +18,37 @@
 
     <!--中间部分---->
     <div class="mid">
-      <div>
+      <div @click="gochange">
         <img src="../views/images/mine/1.png" alt="" />
         <span>&nbsp&nbsp&nbsp切换小区</span>
         <img src="../views/images/icon_0.png" class="arrow" alt="" />
       </div>
-      <div>
+      <div @click="goperson">
         <img src="../views/images/mine/2.png" alt="" />
         <span>&nbsp&nbsp&nbsp家庭成员</span>
         <img src="../views/images/icon_0.png" class="arrow" alt="" />
       </div>
-      <div>
+      <div @click="gocollection">
         <img src="../views/images/mine/3.png" alt="" />
         <span>&nbsp&nbsp&nbsp我的收藏</span>
         <img src="../views/images/icon_0.png" class="arrow" alt="" />
       </div>
-      <div>
+      <div @click="gowallet">
         <img src="../views/images/mine/4.png" alt="" />
         <span>&nbsp&nbsp&nbsp我的钱包</span>
         <img src="../views/images/icon_0.png" class="arrow" alt="" />
       </div>
-      <div>
+      <div @click="gocoupon">
         <img src="../views/images/mine/5.png" alt="" />
         <span>&nbsp&nbsp&nbsp优惠券</span>
         <img src="../views/images/icon_0.png" class="arrow" alt="" />
       </div>
-      <div>
+      <div @click="gointegral">
         <img src="../views/images/mine/6.png" alt="" />
         <span>&nbsp&nbsp&nbsp积分</span>
         <img src="../views/images/icon_0.png" class="arrow" alt="" />
       </div>
-      <div>
+      <div @click="goorder">
         <img src="../views/images/mine/7.png" alt="" />
         <span>&nbsp&nbsp&nbsp我的订单</span>
         <img src="../views/images/icon_0.png" class="arrow" alt="" />
@@ -58,11 +59,11 @@
   </div>
   <!--底部---->
   <div class="foot">
-    <ul>
+    <ul @click="gohome">
       <li><img src="../views/images/icon_1.png" alt="" /></li>
       <li>首页</li>
     </ul>
-    <ul>
+    <ul @click="goservice">
       <li><img src="../views/images/icon_2.png" alt="" /></li>
       <li>社区服务</li>
     </ul>
@@ -79,6 +80,40 @@
 
 <script>
 import "../views/css/index.css";
+export default {
+  methods: {
+    gosetting() {
+      this.$router.replace("/setting");
+    },
+    goservice() {
+      this.$router.replace("/service");
+    },
+    gohome() {
+      this.$router.replace("/home");
+    },
+    gochange() {
+      this.$router.replace("/changearea");
+    },
+    goperson() {
+      this.$router.replace("/person");
+    },
+    gocollection() {
+      this.$router.replace("/collection");
+    },
+    gowallet() {
+      this.$router.replace("/wallet");
+    },
+    gointegral() {
+      this.$router.replace("/integral");
+    },
+    gocoupon() {
+      this.$router.replace("/coupon");
+    },
+    goorder() {
+      this.$router.replace("/order");
+    },
+  },
+};
 </script>
 
 <style scoped>

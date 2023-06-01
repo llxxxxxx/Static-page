@@ -1,6 +1,10 @@
 <!-- 资讯详情页面 -->
 <template>
   <div>
+    <div class="head">
+      <img @click="goback" src="./images/setting/icon_1.png" alt="" />
+      <span>资讯详情</span>
+    </div>
     <div class="bg">
       <div class="info">
         <p style="font-size: 29px; font-weight: 600">
@@ -75,6 +79,11 @@ export default {
       message: "Hello",
     };
   },
+  methods: {
+    goback() {
+      this.$router.replace("/home");
+    },
+  },
 };
 </script>
 
@@ -83,7 +92,29 @@ export default {
   margin: 0;
   padding: 0;
 }
+.head {
+  width: 375px;
+  height: 50px;
+  padding-top: 25px;
+  padding-left: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
 
+.head img {
+  width: 10px;
+}
+
+.head span {
+  font-size: 25px;
+  display: inline-block;
+  width: 335px;
+  height: 40px;
+  text-align: center;
+}
 .bg {
   background-color: #f3f3f3;
 }
@@ -92,6 +123,7 @@ export default {
   width: 360px;
   /* height: ; */
   margin: 0 auto;
+  padding-top: 60px;
 }
 
 .info p {

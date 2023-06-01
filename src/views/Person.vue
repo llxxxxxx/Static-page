@@ -1,7 +1,14 @@
 <!-- 家庭成员页面 -->
 <template>
   <div>
-    <div class="add">
+    <img
+      style="width: 15px; float: left; padding-top: 10px; padding-left: 20px"
+      src="./images/personal-information/icon_1.png"
+      alt=""
+      @click="goback"
+    />
+
+    <div @click="goadd" class="add">
       <img src="./images/person/icon_add.png" alt="" />
       <span style="margin-left: 10px; line-height: 50px; font-size: 18px"
         >添加家庭成员</span
@@ -30,6 +37,14 @@
 export default {
   data() {
     return {};
+  },
+  methods: {
+    goback() {
+      this.$router.replace("/mine");
+    },
+    goadd() {
+      this.$router.replace("/personAdd");
+    },
   },
 };
 </script>

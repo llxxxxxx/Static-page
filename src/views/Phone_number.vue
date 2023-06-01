@@ -3,7 +3,11 @@
   <div>
     <!-- 头部 -->
     <div class="head">
-      <img src="./images/personal-information/icon_1.png" alt="" />
+      <img
+        @click="goback"
+        src="./images/personal-information/icon_1.png"
+        alt=""
+      />
       <span>手机号</span>
     </div>
     <!-- 背景 -->
@@ -33,7 +37,15 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  methods: {
+    goback() {
+      this.$router.replace("/personInformation");
+    },
+  },
+};
+</script>
 
 <style scoped>
 .head {
