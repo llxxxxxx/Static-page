@@ -32,7 +32,7 @@
         <li>3.30天内只能修改一次手机号</li>
       </ul>
       <!-- 解除绑定按钮 -->
-      <div class="button">好了我知道了，我要更换</div>
+      <div @click="gomodify" class="button">好了我知道了，我要更换</div>
     </div>
   </div>
 </template>
@@ -42,6 +42,9 @@ export default {
   methods: {
     goback() {
       this.$router.replace("/personInformation");
+    },
+    gomodify() {
+      this.$router.replace("/modifyphonenumber");
     },
   },
 };
