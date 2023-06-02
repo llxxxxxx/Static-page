@@ -13,7 +13,11 @@
         </div>
         <hr style="border: 1px solid #ddd" />
         <div>
-          <div v-for="(item, index) in list" class="list">
+          <div
+            v-for="(item, index) in list"
+            class="list"
+            @click="select(index)"
+          >
             <img :src="item.image" class="four" alt="" />
             <div>
               <p style="font-size: 18px; font-weight: 700">{{ item.title }}</p>
@@ -105,6 +109,11 @@ export default {
     },
     goinformation() {
       this.$router.replace("/information");
+    },
+    select(i) {
+      if (i === 0) {
+        this.$router.push("/smartdoor");
+      }
     },
   },
 };

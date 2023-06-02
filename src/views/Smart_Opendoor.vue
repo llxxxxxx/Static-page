@@ -3,7 +3,7 @@
   <div>
     <!--头部-->
     <div class="head">
-      <img src="./images/changeArea/icon_1.png" alt="" />
+      <img @click="goback" src="./images/changeArea/icon_1.png" alt="" />
       <span
         style="
           font-size: 22px;
@@ -24,7 +24,7 @@
 
       <div class="main">
         <div>
-          <div v-for="item in content">
+          <div v-for="(item, index) in content" @click="select(index)">
             <img :src="item.image" alt="" />
             <ul>
               <li style="font-weight: 800; font-size: 22px">
@@ -99,6 +99,16 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    goback() {
+      this.$router.replace("/home");
+    },
+    select(i) {
+      if (i === 0) {
+        this.$router.push("/shake");
+      }
+    },
   },
 };
 </script>

@@ -77,6 +77,10 @@ const router = createRouter({
     {
       path: '/modifyphonenumber',
       component: () => import('../views/Modify_Phonenumber.vue')
+    },
+    {
+      path: '/shake',
+      component: () => import('../views/Shake.vue')
     }
   ]
 })
