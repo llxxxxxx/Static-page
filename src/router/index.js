@@ -93,7 +93,11 @@ const router = createRouter({
     {
       path: '/changepassword',
       component: () => import('../views/Change_password.vue')
-    }
+    },
+    {
+      path: '/feedback',
+      component: () => import('../views/Feedback.vue')
+    },
   ]
 })
 

@@ -15,7 +15,9 @@
           <div @click="gopersoninformation">
             个人资料<img src="./images/setting/icon_0.png" alt="" />
           </div>
-          <div>意见反馈<img src="./images/setting/icon_0.png" alt="" /></div>
+          <div @click="feedback">
+            意见反馈<img src="./images/setting/icon_0.png" alt="" />
+          </div>
           <div>关于我们<img src="./images/setting/icon_0.png" alt="" /></div>
         </div>
       </div>
@@ -37,6 +39,9 @@ export default {
     },
     changepassword() {
       this.$router.replace("/changepassword");
+    },
+    feedback() {
+      this.$router.replace("/feedback");
     },
     gopersoninformation() {
       this.$router.replace("/personInformation");
