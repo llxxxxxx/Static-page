@@ -7,7 +7,7 @@
         <span>设置</span>
       </div>
       <div class="mid">
-        <div class="mid-top">
+        <div class="mid-top" @click="changepassword">
           修改密码
           <img src="./images/setting/icon_0.png" alt="" />
         </div>
@@ -34,6 +34,9 @@ export default {
   methods: {
     goback() {
       this.$router.replace("/mine");
+    },
+    changepassword() {
+      this.$router.replace("/changepassword");
     },
     gopersoninformation() {
       this.$router.replace("/personInformation");
