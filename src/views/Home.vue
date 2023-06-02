@@ -115,6 +115,8 @@ export default {
         this.$router.push("/smartdoor");
       } else if (i === 2) {
         this.$router.push("/parking");
+      } else if (i === 3) {
+        this.$router.push("/property");
       }
     },
   },

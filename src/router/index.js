@@ -85,6 +85,10 @@ const router = createRouter({
     {
       path: '/parking',
       component: () => import('../views/Parking.vue')
+    },
+    {
+      path: '/property',
+      component: () => import('../views/Property.vue')
     }
   ]
 })
