@@ -81,6 +81,10 @@ const router = createRouter({
     {
       path: '/shake',
       component: () => import('../views/Shake.vue')
+    },
+    {
+      path: '/parking',
+      component: () => import('../views/Parking.vue')
     }
   ]
 })

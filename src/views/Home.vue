@@ -113,6 +113,8 @@ export default {
     select(i) {
       if (i === 0) {
         this.$router.push("/smartdoor");
+      } else if (i === 2) {
+        this.$router.push("/parking");
       }
     },
   },
