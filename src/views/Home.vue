@@ -7,9 +7,12 @@
     <div class="bg">
       <!--中间部分-->
       <div class="mid">
-        <div class="tongzhi">
-          <img src="../views/images/1_1.png" alt="" />
-          <span> &nbsp通知公告的内容放在这里</span>
+        <div>
+          <van-notice-bar
+            left-icon="volume-o"
+            text="通知公告的内容放在这里啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"
+            background="white"
+          />
         </div>
         <hr style="border: 1px solid #ddd" />
         <div>

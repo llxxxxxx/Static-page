@@ -6,6 +6,33 @@
         <img @click="goback" src="./images/changeArea/icon_1.png" alt="" />
         <span>优惠券</span>
       </div>
+      <!-- 优惠券单元格 -->
+      <van-coupon-cell
+        :coupons="coupons"
+        :chosen-coupon="chosenCoupon"
+        @click="showList = true"
+        style="
+          height: 40px;
+          margin-top: 10px;
+          padding-top: 10px;
+          font-size: 19px;
+        "
+      />
+      <!-- 优惠券列表 -->
+      <van-popup
+        v-model:show="showList"
+        round
+        position="bottom"
+        style="height: 90%; padding-top: 4px"
+      >
+        <van-coupon-list
+          :coupons="coupons"
+          :chosen-coupon="chosenCoupon"
+          :disabled-coupons="disabledCoupons"
+          @change="onChange"
+          @exchange="onExchange"
+        />
+      </van-popup>
       <div class="mid">
         <div class="thing">
           <p class="top">
@@ -37,10 +64,41 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
-  data() {
+  setup() {
+    const coupon = {
+      available: 1,
+      condition: "无金额门槛\n最多优惠12元",
+      reason: "",
+      value: 150,
+      name: "商品券",
+      startAt: 1489104000,
+      endAt: 1514592000,
+      valueDesc: "50",
+      unitDesc: "元",
+    };
+
+    const coupons = ref([coupon]);
+    const showList = ref(false);
+    const chosenCoupon = ref(-1);
+
+    const onChange = (index) => {
+      showList.value = false;
+      chosenCoupon.value = index;
+    };
+    const onExchange = (code) => {
+      coupons.value.push(coupon);
+    };
+
     return {
-      message: "Hello",
+      coupons,
+      showList,
+      onChange,
+      onExchange,
+      chosenCoupon,
+      disabledCoupons: [coupon],
     };
   },
   methods: {
@@ -49,6 +107,19 @@ export default {
     },
   },
 };
+
+// export default {
+//   data() {
+//     return {
+//       message: "Hello",
+//     };
+//   },
+//   methods: {
+//     goback() {
+//       this.$router.replace("/mine");
+//     },
+//   },
+// };
 </script>
 
 <style scoped>

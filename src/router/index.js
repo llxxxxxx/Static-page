@@ -101,6 +101,10 @@ const router = createRouter({
     {
       path: '/security',
       component: () => import('../views/Security.vue')
+    },
+    {
+      path: '/login',
+      component: () => import('../views/Login.vue')
     }
   ]
 })

@@ -21,7 +21,7 @@
           <div>关于我们<img src="./images/setting/icon_0.png" alt="" /></div>
         </div>
       </div>
-      <div class="bottom">
+      <div class="bottom" @click="gologin">
         <button>退出登录</button>
       </div>
     </div>
@@ -45,6 +45,9 @@ export default {
     },
     gopersoninformation() {
       this.$router.replace("/personInformation");
+    },
+    gologin() {
+      this.$router.replace("/login");
     },
   },
 };
