@@ -51,6 +51,8 @@ export default {
     select(i) {
       if (i === 1) {
         this.$router.replace("/repair");
+      } else if (i === 2) {
+        this.$router.replace("/activity");
       }
     },
   },

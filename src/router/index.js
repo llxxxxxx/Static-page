@@ -109,6 +109,10 @@ const router = createRouter({
     {
       path: '/repair',
       component: () => import('../views/Online_repair.vue')
+    },
+    {
+      path: '/activity',
+      component: () => import('../views/Community_activity.vue')
     }
   ]
 })
