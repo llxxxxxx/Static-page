@@ -53,8 +53,10 @@ export default {
         this.$router.replace("/repair");
       } else if (i === 2) {
         this.$router.replace("/activity");
-      } else if(i === 3) {
-        this.$router.replace('/suggestion')
+      } else if (i === 3) {
+        this.$router.replace("/suggestion");
+      } else if (i === 0) {
+        this.$router.replace("/pay");
       }
     },
   },

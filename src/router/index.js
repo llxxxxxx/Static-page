@@ -117,6 +117,10 @@ const router = createRouter({
     {
       path: '/suggestion',
       component: () => import('../views/Suggestion.vue')
+    },
+    {
+      path: '/pay',
+      component: () => import('../views/Pay.vue')
     }
   ]
 })
