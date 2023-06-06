@@ -113,6 +113,10 @@ const router = createRouter({
     {
       path: '/activity',
       component: () => import('../views/Community_activity.vue')
+    },
+    {
+      path: '/suggestion',
+      component: () => import('../views/Suggestion.vue')
     }
   ]
 })
