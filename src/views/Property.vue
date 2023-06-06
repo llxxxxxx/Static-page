@@ -48,6 +48,11 @@ export default {
     goback() {
       this.$router.replace("/home");
     },
+    select(i) {
+      if (i === 1) {
+        this.$router.replace("/repair");
+      }
+    },
   },
 };
 </script>

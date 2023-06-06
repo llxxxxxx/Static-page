@@ -105,6 +105,10 @@ const router = createRouter({
     {
       path: '/login',
       component: () => import('../views/Login.vue')
+    },
+    {
+      path: '/repair',
+      component: () => import('../views/Online_repair.vue')
     }
   ]
 })
