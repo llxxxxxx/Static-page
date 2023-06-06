@@ -98,6 +98,10 @@ const router = createRouter({
       path: '/feedback',
       component: () => import('../views/Feedback.vue')
     },
+    {
+      path: '/security',
+      component: () => import('../views/Security.vue')
+    }
   ]
 })
 
