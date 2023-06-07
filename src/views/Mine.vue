@@ -12,7 +12,7 @@
           @click="gosetting"
         />
       </p>
-      <img src="../views/images/mine/avatar.png" alt="" />
+      <img @click="gologin" src="../views/images/mine/avatar.png" alt="" />
       <p>请点击登录</p>
     </div>
 
@@ -111,6 +111,9 @@ export default {
     },
     goorder() {
       this.$router.replace("/order");
+    },
+    gologin() {
+      this.$router.replace("/login");
     },
   },
 };

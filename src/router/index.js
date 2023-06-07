@@ -121,6 +121,14 @@ const router = createRouter({
     {
       path: '/pay',
       component: () => import('../views/Pay.vue')
+    },
+    {
+      path: '/',
+      component: () => import('../views/Login.vue')
+    },
+    {
+      path: '/complaint',
+      component: () => import('../views/Complaint_record.vue')
     }
   ]
 })

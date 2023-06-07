@@ -5,7 +5,12 @@
       <div class="head">
         <img @click="goback" src="./images/setting/icon_1.png" alt="" />
         <span>投诉建议</span>
-        <img style="width: 20px" src="./images/repair/1.png" alt="" />
+        <img
+          @click="gocomplaint"
+          style="width: 20px"
+          src="./images/repair/1.png"
+          alt=""
+        />
       </div>
       <!-- 主体部分 -->
       <div class="feed">
@@ -40,6 +45,9 @@ export default {
   methods: {
     goback() {
       this.$router.replace("/property");
+    },
+    gocomplaint() {
+      this.$router.replace("/complaint");
     },
   },
 };

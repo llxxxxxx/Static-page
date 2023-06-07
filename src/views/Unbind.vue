@@ -23,7 +23,7 @@
         您可以点击下方按钮解除与当前微信的绑定，或者绑定新的微信号
       </p>
       <!-- 解除绑定按钮 -->
-      <div class="button">解除绑定</div>
+      <div @click="gopersonInformation" class="button">解除绑定</div>
     </div>
   </div>
 </template>
@@ -32,6 +32,9 @@
 export default {
   methods: {
     goback() {
+      this.$router.replace("/personInformation");
+    },
+    gopersonInformation() {
       this.$router.replace("/personInformation");
     },
   },

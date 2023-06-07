@@ -45,7 +45,7 @@
         </div>
       </div>
       <div>
-        <button>绑定</button>
+        <button @click="goperson">绑定</button>
       </div>
     </div>
   </div>
@@ -56,6 +56,9 @@ export default {
   methods: {
     goback() {
       this.$router.replace("/phonenumber");
+    },
+    goperson() {
+      this.$router.replace("/personInformation");
     },
   },
 };

@@ -1,7 +1,18 @@
 <!-- 首页 -->
 <template>
   <div>
-    <img class="head" src="../views/images/header.png" alt="" />
+    <!-- <img class="head" src="../views/images/header.png" alt="" /> -->
+    <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
+      <van-swipe-item>
+        <img src="./images/header.png" alt="" />
+      </van-swipe-item>
+      <van-swipe-item>
+        <img src="./images/header.png" alt="" />
+      </van-swipe-item>
+      <van-swipe-item>
+        <img src="./images/header.png" alt="" />
+      </van-swipe-item>
+    </van-swipe>
 
     <!--灰色背景-->
     <div class="bg">
@@ -24,7 +35,7 @@
             <img :src="item.image" class="four" alt="" />
             <div>
               <p style="font-size: 18px; font-weight: 700">{{ item.title }}</p>
-              <p>{{ item.lock }}</p>
+              <p style="color: #888">{{ item.lock }}</p>
             </div>
           </div>
         </div>
@@ -32,7 +43,7 @@
       <!--民生资讯部分-->
       <div>
         <div class="zixun">
-          <span style="font-weight: 700; font-size: 25px; margin-left: 20px"
+          <span style="font-weight: 600; font-size: 20px; margin-left: 20px"
             >民生资讯</span
           >
           <span style="float: right; color: #777777">查看全部</span>
@@ -134,8 +145,27 @@ export default {
   padding: 0;
   /* position: relative; */
 }
+.my-swipe .van-swipe-item {
+  color: #fff;
+  font-size: 20px;
+  line-height: 150px;
+  text-align: center;
+  background-color: #39a9ed;
+  height: 220px;
+}
+.my-swipe img {
+  height: 100%;
+  width: 100%;
+}
 .head {
   width: 390px;
+}
+.picture {
+  width: 390px;
+  height: 220px;
+}
+.p1 {
+  font-stretch: 2;
 }
 .foot {
   position: fixed;
@@ -194,7 +224,7 @@ export default {
 }
 .zixun {
   width: 380px;
-  height: 45px;
+  height: 40px;
   line-height: 45px;
 }
 .huawei {
