@@ -21,7 +21,7 @@
         </div>
       </div>
       <div class="bottom">
-        <button>提交</button>
+        <button @click="gosetting">提交</button>
       </div>
     </div>
   </div>
@@ -34,6 +34,9 @@ export default {
   },
   methods: {
     goback() {
+      this.$router.replace("/setting");
+    },
+    gosetting() {
       this.$router.replace("/setting");
     },
   },
@@ -69,7 +72,7 @@ export default {
 }
 
 .head span {
-  font-size: 25px;
+  font-size: 24px;
   display: inline-block;
   width: 335px;
   height: 40px;

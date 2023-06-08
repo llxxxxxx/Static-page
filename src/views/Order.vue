@@ -488,11 +488,11 @@ export default {
 }
 
 .head img {
-  width: 15px;
+  width: 11px;
 }
 
 .head span {
-  font-size: 29px;
+  font-size: 23px;
   display: inline-block;
   width: 335px;
   height: 40px;

@@ -174,7 +174,7 @@ ul {
 }
 
 .mid {
-  height: 700px;
+  height: 760px;
   background-color: #f3f3f3;
 }
 

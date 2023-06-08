@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="bottom">
-      <button>提交</button>
+      <button @click="gosetting">提交</button>
     </div>
   </div>
 </template>
@@ -33,6 +33,9 @@ export default {
   methods: {
     goback() {
       this.$router.replace("/setting");
+    },
+    gosetting() {
+      this.$router.push("/setting");
     },
   },
 };

@@ -1,0 +1,86 @@
+Date : 2023-06-08 13:34:41
+Directory : e:\静态页面\vue-base
+Total : 44 files,  6104 codes, 145 comments, 281 blanks, all 6530 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| vue        |         32 |      4,870 |        136 |        227 |      5,233 |
+| JSON       |          2 |        943 |          0 |          2 |        945 |
+| JavaScript |          3 |        158 |          4 |         17 |        179 |
+| CSS        |          3 |         94 |          5 |         21 |        120 |
+| HTML       |          1 |         19 |          0 |          1 |         20 |
+| Markdown   |          2 |         19 |          0 |         12 |         31 |
+| XML        |          1 |          1 |          0 |          1 |          2 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                           | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                              |         44 |      6,104 |        145 |        281 |      6,530 |
+| . (Files)                                                      |          5 |        991 |          1 |         18 |      1,010 |
+| src                                                            |         39 |      5,113 |        144 |        263 |      5,520 |
+| src (Files)                                                    |          2 |         17 |          1 |         13 |         31 |
+| src\assets                                                     |          3 |         88 |          2 |         22 |        112 |
+| src\router                                                     |          1 |        135 |          2 |          4 |        141 |
+| src\views                                                      |         33 |      4,873 |        139 |        224 |      5,236 |
+| src\views (Files)                                              |         31 |      4,865 |        136 |        224 |      5,225 |
+| src\views\css                                                  |          1 |          7 |          3 |          0 |         10 |
+| src\views\images                                               |          1 |          1 |          0 |          0 |          1 |
+| src\views\images\mine                                          |          1 |          1 |          0 |          0 |          1 |
+| src\views\images\mine\1                                        |          1 |          1 |          0 |          0 |          1 |
+| src\views\images\mine\1\Static-page                            |          1 |          1 |          0 |          0 |          1 |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                       | language   | code       | comment    | blank      | total      |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+
+| e:\静态页面\vue-base\README.md                                     | Markdown   |         18 |          0 |         12 |         30 |
+| e:\静态页面\vue-base\index.html                                    | HTML       |         19 |          0 |          1 |         20 |
+| e:\静态页面\vue-base\package-lock.json                             | JSON       |        923 |          0 |          1 |        924 |
+| e:\静态页面\vue-base\package.json                                  | JSON       |         20 |          0 |          1 |         21 |
+| e:\静态页面\vue-base\src\App.vue                                   | vue        |          5 |          0 |          3 |          8 |
+| e:\静态页面\vue-base\src\assets\base.css                           | CSS        |         58 |          2 |         14 |         74 |
+| e:\静态页面\vue-base\src\assets\logo.svg                           | XML        |          1 |          0 |          1 |          2 |
+| e:\静态页面\vue-base\src\assets\main.css                           | CSS        |         29 |          0 |          7 |         36 |
+| e:\静态页面\vue-base\src\main.js                                   | JavaScript |         12 |          1 |         10 |         23 |
+| e:\静态页面\vue-base\src\router\index.js                           | JavaScript |        135 |          2 |          4 |        141 |
+| e:\静态页面\vue-base\src\views\Change_password.vue                 | vue        |         98 |          1 |          8 |        107 |
+| e:\静态页面\vue-base\src\views\Changearea.vue                      | vue        |        114 |          1 |          9 |        124 |
+| e:\静态页面\vue-base\src\views\Collection.vue                      | vue        |        118 |          1 |          8 |        127 |
+| e:\静态页面\vue-base\src\views\Community_activity.vue              | vue        |        291 |          8 |          7 |        306 |
+| e:\静态页面\vue-base\src\views\Complaint_record.vue                | vue        |        123 |          2 |          6 |        131 |
+| e:\静态页面\vue-base\src\views\Coupon.vue                          | vue        |        170 |          3 |         12 |        185 |
+| e:\静态页面\vue-base\src\views\Feedback.vue                        | vue        |        110 |          1 |          8 |        119 |
+| e:\静态页面\vue-base\src\views\Home.vue                            | vue        |        268 |         24 |          4 |        296 |
+| e:\静态页面\vue-base\src\views\Information.vue                     | vue        |        180 |          1 |         16 |        197 |
+| e:\静态页面\vue-base\src\views\Integral.vue                        | vue        |        122 |          1 |          4 |        127 |
+| e:\静态页面\vue-base\src\views\Login.vue                           | vue        |        115 |         11 |          7 |        133 |
+| e:\静态页面\vue-base\src\views\Mine.vue                            | vue        |        192 |         22 |         14 |        228 |
+| e:\静态页面\vue-base\src\views\Modify_Phonenumber.vue              | vue        |        133 |          5 |          6 |        144 |
+| e:\静态页面\vue-base\src\views\Online_repair.vue                   | vue        |         98 |          2 |          7 |        107 |
+| e:\静态页面\vue-base\src\views\Order.vue                           | vue        |        541 |          1 |         10 |        552 |
+| e:\静态页面\vue-base\src\views\Parking.vue                         | vue        |        182 |          1 |          4 |        187 |
+| e:\静态页面\vue-base\src\views\Pay.vue                             | vue        |        152 |          0 |          4 |        156 |
+| e:\静态页面\vue-base\src\views\Person.vue                          | vue        |         77 |          1 |          4 |         82 |
+| e:\静态页面\vue-base\src\views\Person_add.vue                      | vue        |        100 |          1 |          7 |        108 |
+| e:\静态页面\vue-base\src\views\Person_information.vue              | vue        |        195 |          5 |          8 |        208 |
+| e:\静态页面\vue-base\src\views\Phone_number.vue                    | vue        |        106 |          5 |          5 |        116 |
+| e:\静态页面\vue-base\src\views\Property.vue                        | vue        |        105 |          0 |          5 |        110 |
+| e:\静态页面\vue-base\src\views\Security.vue                        | vue        |        134 |          1 |          6 |        141 |
+| e:\静态页面\vue-base\src\views\Service.vue                         | vue        |        210 |         19 |         13 |        242 |
+| e:\静态页面\vue-base\src\views\Setting.vue                         | vue        |        124 |          1 |          8 |        133 |
+| e:\静态页面\vue-base\src\views\Shake.vue                           | vue        |         63 |          1 |          4 |         68 |
+| e:\静态页面\vue-base\src\views\Smart_Opendoor.vue                  | vue        |        214 |          6 |          9 |        229 |
+| e:\静态页面\vue-base\src\views\Suggestion.vue                      | vue        |         96 |          2 |          7 |        105 |
+| e:\静态页面\vue-base\src\views\Test.vue                            | vue        |        220 |          3 |          5 |        228 |
+| e:\静态页面\vue-base\src\views\Unbind.vue                          | vue        |         92 |          5 |          5 |        102 |
+| e:\静态页面\vue-base\src\views\Wallet.vue                          | vue        |        122 |          1 |          4 |        127 |
+| e:\静态页面\vue-base\src\views\css\index.css                       | CSS        |          7 |          3 |          0 |         10 |
+| e:\静态页面\vue-base\src\views\images\mine\1\Static-page\README.md | Markdown   |          1 |          0 |          0 |          1 |
+| e:\静态页面\vue-base\vite.config.js                                | JavaScript |         11 |          1 |          3 |         15 |
+| Total                                                          |            |      6,104 |        145 |        281 |      6,530 |
++----------------------------------------------------------------+------------+------------+------------+------------+------------+

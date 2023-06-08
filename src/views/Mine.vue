@@ -4,7 +4,7 @@
     <!--头部-->
     <div class="head">
       <p style="color: gray; margin-bottom: 40px">
-        个人中心
+        <span style="margin-left: 35px">个人中心</span>
         <img
           style="width: 20px; height: 20px; float: right; margin-right: 20px"
           src="./images/mine/8.png"
