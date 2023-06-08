@@ -6,121 +6,447 @@
         <img @click="goback" src="./images/changeArea/icon_1.png" alt="" />
         <span>我的订单</span>
       </div>
-      <div class="select">
-        <ul>
-          <li style="color: orange; border-bottom: 2px solid orange">全部</li>
-          <li>未处理</li>
-          <li>处理中</li>
-          <li>已完成</li>
-          <li>已取消</li>
-        </ul>
-      </div>
-      <div class="mid">
-        <div class="midd">
-          <div class="midd-top">
-            <img src="./images/order/icon-shop.png" alt="" />
-            <span>&nbsp百果园&nbsp</span>
-            <img src="./images/icon_0.png" alt="" />
-            <span style="float: right; color: orange">已完成</span>
-          </div>
-          <div class="midd-mid">
-            <ul>
-              <li><img src="./images/1_3.png" alt="" /></li>
-              <li style="width: 160px; margin-left: 10px; margin-top: 10px">
-                <p>宝贝的标题放在这里，宝贝的标题放在这里</p>
-                <p style="color: #999; font-size: 12px; margin-top: 5px">
-                  宝贝的规格
-                </p>
-              </li>
-              <li style="width: 70px; margin-left: 20px; margin-top: 10px">
-                <p>￥150.00</p>
-                <p style="margin-left: 50px; color: #999; font-size: 12px">
-                  x1
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="midd-bottom">
-            <button
-              style="
-                width: 80px;
-                height: 25px;
-                color: #666;
-                background-color: white;
-                border: 1px solid #999;
-                border-radius: 5px;
-                margin-right: 10px;
-              "
-            >
-              删除订单
-            </button>
-            <button
-              style="
-                width: 80px;
-                height: 25px;
-                color: white;
-                background-color: #ea5e07;
-                border: 0px;
-                border-radius: 5px;
-              "
-            >
-              确认订单
-            </button>
-          </div>
-        </div>
-        <div class="midd">
-          <div class="midd-top">
-            <img src="./images/order/icon-shop.png" alt="" />
-            <span>&nbsp百果园&nbsp</span>
-            <img src="./images/icon_0.png" alt="" />
-            <span style="float: right; color: orange">已完成</span>
-          </div>
-          <div class="midd-mid">
-            <ul>
-              <li><img src="./images/1_3.png" alt="" /></li>
-              <li style="width: 160px; margin-left: 10px; margin-top: 10px">
-                <p>宝贝的标题放在这里，宝贝的标题放在这里</p>
-                <p style="color: #999; font-size: 12px; margin-top: 5px">
-                  宝贝的规格
-                </p>
-              </li>
-              <li style="width: 70px; margin-left: 20px; margin-top: 10px">
-                <p>￥150.00</p>
-                <p style="margin-left: 50px; color: #999; font-size: 12px">
-                  x1
-                </p>
-              </li>
-            </ul>
-          </div>
-          <div class="midd-bottom">
-            <button
-              style="
-                width: 80px;
-                height: 25px;
-                color: #666;
-                background-color: white;
-                border: 1px solid #999;
-                border-radius: 5px;
-                margin-right: 10px;
-              "
-            >
-              删除订单
-            </button>
-            <button
-              style="
-                width: 80px;
-                height: 25px;
-                color: white;
-                background-color: #ea5e07;
-                border: 0px;
-                border-radius: 5px;
-              "
-            >
-              确认订单
-            </button>
-          </div>
-        </div>
-      </div>
+      <van-tabs
+        v-model:active="active"
+        swipeable="true"
+        title-active-color="orange"
+        line-width="70px"
+        color="orange"
+      >
+        <van-tab title=" 全部">
+          <div class="mid">
+            <div class="midd">
+              <div class="midd-top">
+                <img src="./images/order/icon-shop.png" alt="" />
+                <span>&nbsp百果园&nbsp</span>
+                <img src="./images/icon_0.png" alt="" />
+                <span style="float: right; color: orange">已完成</span>
+              </div>
+              <div class="midd-mid">
+                <ul>
+                  <li><img src="./images/1_3.png" alt="" /></li>
+                  <li style="width: 160px; margin-left: 10px; margin-top: 10px">
+                    <p>宝贝的标题放在这里，宝贝的标题放在这里</p>
+                    <p style="color: #999; font-size: 12px; margin-top: 5px">
+                      宝贝的规格
+                    </p>
+                  </li>
+                  <li style="width: 70px; margin-left: 20px; margin-top: 10px">
+                    <p>￥150.00</p>
+                    <p style="margin-left: 50px; color: #999; font-size: 12px">
+                      x1
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="midd-bottom">
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: #666;
+                    background-color: white;
+                    border: 1px solid #999;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                  "
+                >
+                  删除订单
+                </button>
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: white;
+                    background-color: #ea5e07;
+                    border: 0px;
+                    border-radius: 5px;
+                  "
+                >
+                  确认订单
+                </button>
+              </div>
+            </div>
+            <div class="midd">
+              <div class="midd-top">
+                <img src="./images/order/icon-shop.png" alt="" />
+                <span>&nbsp百果园&nbsp</span>
+                <img src="./images/icon_0.png" alt="" />
+                <span style="float: right; color: orange">已完成</span>
+              </div>
+              <div class="midd-mid">
+                <ul>
+                  <li><img src="./images/1_3.png" alt="" /></li>
+                  <li style="width: 160px; margin-left: 10px; margin-top: 10px">
+                    <p>宝贝的标题放在这里，宝贝的标题放在这里</p>
+                    <p style="color: #999; font-size: 12px; margin-top: 5px">
+                      宝贝的规格
+                    </p>
+                  </li>
+                  <li style="width: 70px; margin-left: 20px; margin-top: 10px">
+                    <p>￥150.00</p>
+                    <p style="margin-left: 50px; color: #999; font-size: 12px">
+                      x1
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="midd-bottom">
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: #666;
+                    background-color: white;
+                    border: 1px solid #999;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                  "
+                >
+                  删除订单
+                </button>
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: white;
+                    background-color: #ea5e07;
+                    border: 0px;
+                    border-radius: 5px;
+                  "
+                >
+                  确认订单
+                </button>
+              </div>
+            </div>
+          </div></van-tab
+        >
+        <van-tab title="未处理">
+          <div class="mid">
+            <div class="midd">
+              <div class="midd-top">
+                <img src="./images/order/icon-shop.png" alt="" />
+                <span>&nbsp百果园&nbsp</span>
+                <img src="./images/icon_0.png" alt="" />
+                <span style="float: right; color: orange">已完成</span>
+              </div>
+              <div class="midd-mid">
+                <ul>
+                  <li><img src="./images/1_3.png" alt="" /></li>
+                  <li style="width: 160px; margin-left: 10px; margin-top: 10px">
+                    <p>宝贝的标题放在这里，宝贝的标题放在这里</p>
+                    <p style="color: #999; font-size: 12px; margin-top: 5px">
+                      宝贝的规格
+                    </p>
+                  </li>
+                  <li style="width: 70px; margin-left: 20px; margin-top: 10px">
+                    <p>￥150.00</p>
+                    <p style="margin-left: 50px; color: #999; font-size: 12px">
+                      x1
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="midd-bottom">
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: #666;
+                    background-color: white;
+                    border: 1px solid #999;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                  "
+                >
+                  删除订单
+                </button>
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: white;
+                    background-color: #ea5e07;
+                    border: 0px;
+                    border-radius: 5px;
+                  "
+                >
+                  确认订单
+                </button>
+              </div>
+            </div>
+            <div class="midd">
+              <div class="midd-top">
+                <img src="./images/order/icon-shop.png" alt="" />
+                <span>&nbsp百果园&nbsp</span>
+                <img src="./images/icon_0.png" alt="" />
+                <span style="float: right; color: orange">已完成</span>
+              </div>
+              <div class="midd-mid">
+                <ul>
+                  <li><img src="./images/1_3.png" alt="" /></li>
+                  <li style="width: 160px; margin-left: 10px; margin-top: 10px">
+                    <p>宝贝的标题放在这里，宝贝的标题放在这里</p>
+                    <p style="color: #999; font-size: 12px; margin-top: 5px">
+                      宝贝的规格
+                    </p>
+                  </li>
+                  <li style="width: 70px; margin-left: 20px; margin-top: 10px">
+                    <p>￥150.00</p>
+                    <p style="margin-left: 50px; color: #999; font-size: 12px">
+                      x1
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="midd-bottom">
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: #666;
+                    background-color: white;
+                    border: 1px solid #999;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                  "
+                >
+                  删除订单
+                </button>
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: white;
+                    background-color: #ea5e07;
+                    border: 0px;
+                    border-radius: 5px;
+                  "
+                >
+                  确认订单
+                </button>
+              </div>
+            </div>
+          </div></van-tab
+        >
+        <van-tab title="处理中">
+          <div class="mid">
+            <div class="midd">
+              <div class="midd-top">
+                <img src="./images/order/icon-shop.png" alt="" />
+                <span>&nbsp百果园&nbsp</span>
+                <img src="./images/icon_0.png" alt="" />
+                <span style="float: right; color: orange">已完成</span>
+              </div>
+              <div class="midd-mid">
+                <ul>
+                  <li><img src="./images/1_3.png" alt="" /></li>
+                  <li style="width: 160px; margin-left: 10px; margin-top: 10px">
+                    <p>宝贝的标题放在这里，宝贝的标题放在这里</p>
+                    <p style="color: #999; font-size: 12px; margin-top: 5px">
+                      宝贝的规格
+                    </p>
+                  </li>
+                  <li style="width: 70px; margin-left: 20px; margin-top: 10px">
+                    <p>￥150.00</p>
+                    <p style="margin-left: 50px; color: #999; font-size: 12px">
+                      x1
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="midd-bottom">
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: #666;
+                    background-color: white;
+                    border: 1px solid #999;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                  "
+                >
+                  删除订单
+                </button>
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: white;
+                    background-color: #ea5e07;
+                    border: 0px;
+                    border-radius: 5px;
+                  "
+                >
+                  确认订单
+                </button>
+              </div>
+            </div>
+            <div class="midd">
+              <div class="midd-top">
+                <img src="./images/order/icon-shop.png" alt="" />
+                <span>&nbsp百果园&nbsp</span>
+                <img src="./images/icon_0.png" alt="" />
+                <span style="float: right; color: orange">已完成</span>
+              </div>
+              <div class="midd-mid">
+                <ul>
+                  <li><img src="./images/1_3.png" alt="" /></li>
+                  <li style="width: 160px; margin-left: 10px; margin-top: 10px">
+                    <p>宝贝的标题放在这里，宝贝的标题放在这里</p>
+                    <p style="color: #999; font-size: 12px; margin-top: 5px">
+                      宝贝的规格
+                    </p>
+                  </li>
+                  <li style="width: 70px; margin-left: 20px; margin-top: 10px">
+                    <p>￥150.00</p>
+                    <p style="margin-left: 50px; color: #999; font-size: 12px">
+                      x1
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="midd-bottom">
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: #666;
+                    background-color: white;
+                    border: 1px solid #999;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                  "
+                >
+                  删除订单
+                </button>
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: white;
+                    background-color: #ea5e07;
+                    border: 0px;
+                    border-radius: 5px;
+                  "
+                >
+                  确认订单
+                </button>
+              </div>
+            </div>
+          </div></van-tab
+        >
+        <van-tab title="已完成">
+          <div class="mid">
+            <div class="midd">
+              <div class="midd-top">
+                <img src="./images/order/icon-shop.png" alt="" />
+                <span>&nbsp百果园&nbsp</span>
+                <img src="./images/icon_0.png" alt="" />
+                <span style="float: right; color: orange">已完成</span>
+              </div>
+              <div class="midd-mid">
+                <ul>
+                  <li><img src="./images/1_3.png" alt="" /></li>
+                  <li style="width: 160px; margin-left: 10px; margin-top: 10px">
+                    <p>宝贝的标题放在这里，宝贝的标题放在这里</p>
+                    <p style="color: #999; font-size: 12px; margin-top: 5px">
+                      宝贝的规格
+                    </p>
+                  </li>
+                  <li style="width: 70px; margin-left: 20px; margin-top: 10px">
+                    <p>￥150.00</p>
+                    <p style="margin-left: 50px; color: #999; font-size: 12px">
+                      x1
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="midd-bottom">
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: #666;
+                    background-color: white;
+                    border: 1px solid #999;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                  "
+                >
+                  删除订单
+                </button>
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: white;
+                    background-color: #ea5e07;
+                    border: 0px;
+                    border-radius: 5px;
+                  "
+                >
+                  确认订单
+                </button>
+              </div>
+            </div>
+            <div class="midd">
+              <div class="midd-top">
+                <img src="./images/order/icon-shop.png" alt="" />
+                <span>&nbsp百果园&nbsp</span>
+                <img src="./images/icon_0.png" alt="" />
+                <span style="float: right; color: orange">已完成</span>
+              </div>
+              <div class="midd-mid">
+                <ul>
+                  <li><img src="./images/1_3.png" alt="" /></li>
+                  <li style="width: 160px; margin-left: 10px; margin-top: 10px">
+                    <p>宝贝的标题放在这里，宝贝的标题放在这里</p>
+                    <p style="color: #999; font-size: 12px; margin-top: 5px">
+                      宝贝的规格
+                    </p>
+                  </li>
+                  <li style="width: 70px; margin-left: 20px; margin-top: 10px">
+                    <p>￥150.00</p>
+                    <p style="margin-left: 50px; color: #999; font-size: 12px">
+                      x1
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="midd-bottom">
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: #666;
+                    background-color: white;
+                    border: 1px solid #999;
+                    border-radius: 5px;
+                    margin-right: 10px;
+                  "
+                >
+                  删除订单
+                </button>
+                <button
+                  style="
+                    width: 80px;
+                    height: 25px;
+                    color: white;
+                    background-color: #ea5e07;
+                    border: 0px;
+                    border-radius: 5px;
+                  "
+                >
+                  确认订单
+                </button>
+              </div>
+            </div>
+          </div></van-tab
+        >
+        <van-tab title="已取消">已取消</van-tab>
+      </van-tabs>
     </div>
   </div>
 </template>

@@ -81,7 +81,8 @@ export default {
   },
   methods: {
     goback() {
-      this.$router.replace("/home");
+      // this.$router.push("/home");
+      this.$router.go(-1);
     },
   },
 };

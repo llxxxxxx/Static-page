@@ -58,7 +58,7 @@
     </div>
   </div>
   <!--底部---->
-  <div class="foot">
+  <!-- <div class="foot">
     <ul @click="gohome">
       <li><img src="../views/images/icon_1.png" alt="" /></li>
       <li>首页</li>
@@ -75,10 +75,37 @@
       <li><img src="../views/images/icon_4_1.png" alt="" /></li>
       <li style="color: orange">个人中心</li>
     </ul>
-  </div>
+  </div> -->
+
+  <van-tabbar v-model="active" active-color="orange" route="true">
+    <van-tabbar-item to="/home">
+      <span>首页</span>
+      <template #icon="props">
+        <img :src="props.active ? icon.active1 : icon.inactive1" />
+      </template>
+    </van-tabbar-item>
+    <van-tabbar-item to="/service">
+      <span>社区服务</span>
+      <template #icon="props">
+        <img :src="props.active ? icon.active2 : icon.inactive2" />
+      </template> </van-tabbar-item
+    ><van-tabbar-item>
+      <span>社区交流</span>
+      <template #icon="props">
+        <img :src="props.active ? icon.active3 : icon.inactive3" />
+      </template>
+    </van-tabbar-item>
+    <van-tabbar-item to="/mine">
+      <span>个人中心</span>
+      <template #icon="props">
+        <img :src="props.active ? icon.active4 : icon.inactive4" />
+      </template>
+    </van-tabbar-item>
+  </van-tabbar>
 </template>
 
 <script>
+import { ref } from "vue";
 import "../views/css/index.css";
 export default {
   methods: {
@@ -115,6 +142,22 @@ export default {
     gologin() {
       this.$router.replace("/login");
     },
+  },
+  setup() {
+    const active = ref(0);
+    const icon = {
+      active1: "/test/icon_1_1.png",
+      inactive1: "/test/icon_1.png",
+      active2: "/test/icon_2_1.png",
+      inactive2: "/test/icon_2.png",
+      inactive3: "/test/icon_3.png",
+      active4: "/test/icon_4_1.png",
+      inactive4: "/test/icon_4.png",
+    };
+    return {
+      icon,
+      active,
+    };
   },
 };
 </script>

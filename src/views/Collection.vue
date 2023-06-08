@@ -6,27 +6,33 @@
         <img @click="goback" src="./images/changeArea/icon_1.png" alt="" />
         <span>我的收藏</span>
       </div>
-      <div class="select">
-        <ul>
-          <li style="color: orange; border-bottom: 2px solid orange">资讯</li>
-          <li>社区交流</li>
-        </ul>
-      </div>
-      <div class="mid">
-        <div @click="goinformation" class="zixun">
-          <img src="./images/1_3.png" alt="" />
-          <span> 百岁奶奶创世界纪录 成全球最年长跳伞玩家</span>
-        </div>
-        <div class="zixun">
-          <img src="./images/1_4.png" alt="" />
-          <span>南京大屠杀死难者公祭仪式今日举行</span>
-        </div>
-      </div>
+      <van-tabs
+        v-model:active="active"
+        color="orange"
+        swipeable="true"
+        title-active-color="orange"
+        line-width="90px"
+      >
+        <van-tab title="资讯"
+          ><div class="mid">
+            <div @click="goinformation" class="zixun">
+              <img src="./images/1_3.png" alt="" />
+              <span> 百岁奶奶创世界纪录 成全球最年长跳伞玩家</span>
+            </div>
+            <div class="zixun">
+              <img src="./images/1_4.png" alt="" />
+              <span>南京大屠杀死难者公祭仪式今日举行</span>
+            </div>
+          </div></van-tab
+        >
+        <van-tab title="社区交流"></van-tab>
+      </van-tabs>
     </div>
   </div>
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
   data() {
     return {};
@@ -36,8 +42,12 @@ export default {
       this.$router.replace("/mine");
     },
     goinformation() {
-      this.$router.replace("/information");
+      this.$router.push("/information");
     },
+  },
+  setup() {
+    const activeName = ref("a");
+    return { activeName };
   },
 };
 </script>

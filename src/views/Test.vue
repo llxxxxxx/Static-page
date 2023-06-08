@@ -1,7 +1,5 @@
-<!-- 首页 -->
 <template>
   <div>
-    <!-- <img class="head" src="../views/images/header.png" alt="" /> -->
     <van-swipe class="my-swipe" :autoplay="3000" indicator-color="white">
       <van-swipe-item>
         <img src="./images/header.png" alt="" />
@@ -64,25 +62,6 @@
         </div>
       </div>
     </div>
-    <!--底部-->
-    <!-- <div class="foot">
-      <ul>
-        <li><img src="../views/images/icon_1_1.png" alt="" /></li>
-        <li style="color: orange">首页</li>
-      </ul>
-      <ul @click="goservice">
-        <li><img src="../views/images/icon_2.png" alt="" /></li>
-        <li>社区服务</li>
-      </ul>
-      <ul>
-        <li><img src="../views/images/icon_3.png" alt="" /></li>
-        <li>社区交流</li>
-      </ul>
-      <ul @click="gomine">
-        <li><img src="../views/images/icon_4.png" alt="" /></li>
-        <li>个人中心</li>
-      </ul>
-    </div> -->
     <van-tabbar v-model="active" active-color="orange" route="true">
       <van-tabbar-item to="/home">
         <span>首页</span>
@@ -113,55 +92,8 @@
 
 <script>
 import { ref } from "vue";
+
 export default {
-  data() {
-    return {
-      list: [
-        {
-          image: "src/views/images/1.png",
-          title: "智慧开门",
-          lock: "手机控制门锁",
-        },
-        {
-          image: "src/views/images/2.png",
-          title: "智慧安防",
-          lock: "实时监控保卫",
-        },
-        {
-          image: "src/views/images/3.png",
-          title: "社区停车",
-          lock: "快速寻找车位",
-        },
-        {
-          image: "src/views/images/4.png",
-          title: "物业服务",
-          lock: "物业保修缴费",
-        },
-      ],
-    };
-  },
-  methods: {
-    goservice() {
-      this.$router.replace("/service");
-    },
-    gomine() {
-      this.$router.replace("/mine");
-    },
-    goinformation() {
-      this.$router.push("/information");
-    },
-    select(i) {
-      if (i === 0) {
-        this.$router.push("/smartdoor");
-      } else if (i === 1) {
-        this.$router.push("/security");
-      } else if (i === 2) {
-        this.$router.push("/parking");
-      } else if (i === 3) {
-        this.$router.push("/property");
-      }
-    },
-  },
   setup() {
     const active = ref(0);
     const icon = {

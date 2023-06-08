@@ -129,6 +129,10 @@ const router = createRouter({
     {
       path: '/complaint',
       component: () => import('../views/Complaint_record.vue')
+    },
+    {
+      path: '/test',
+      component: () => import('../views/Test.vue')
     }
   ]
 })

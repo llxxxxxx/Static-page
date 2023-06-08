@@ -13,12 +13,12 @@
       <div class="select">
         <div class="select1">
           白水芊城上水坊
-          <span style="color: #666">点击切换</span>
+          <span style="color: #999">点击切换</span>
           <img src="./images/changeArea/icon_3.png" alt="" />
         </div>
         <div class="select2">
           上新河小区
-          <span style="color: #666">点击切换</span>
+          <span style="color: #999">点击切换</span>
           <img src="./images/changeArea/icon_3.png" alt="" />
         </div>
       </div>
@@ -27,9 +27,14 @@
 </template>
 
 <script>
+import { ref } from "vue";
 export default {
   data() {
     return {};
+  },
+  setup() {
+    const active = ref(0);
+    return { active };
   },
   methods: {
     goback() {
